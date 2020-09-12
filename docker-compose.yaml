@@ -1,0 +1,12 @@
+version: "3"
+services: 
+  ldap:
+     image: osixia/openldap:latest
+     environment:
+     - "LDAP_ORGANISATION=dalongrong"
+     - "LDAP_DOMAIN=rongfengliang.com"
+     - "LDAP_ADMIN_PASSWORD=12sROjpn*^"
+     ports: 
+     - 389:389
+     - 636:636
+    
